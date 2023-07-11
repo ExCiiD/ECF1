@@ -31,15 +31,17 @@ function searchValueUpdate() {
 // fonction pour afficher les repas
 function displayMeals() {
     bottom.innerHTML = ''/* efface les anciennes cartes */
+    const sortMethod = (a, b) => {
+        if (btnState == true) {
+            return a.strMeal.localeCompare(b.strMeal);
+        }
+        else {
+            return b.strMeal.localeCompare(a.strMeal);
+        }
+    }
     tab
         .slice(0, rangeValue)
-        .sort((a, b) => /* a.strMeal.localeCompare(b.strMeal) */ {
-            if (btnState == true) { a.strMeal.localeCompare(b.strMeal) }
-            else {
-                b.strMeal.localeCompare(a.strMeal)
-            }
-        }
-        )
+        .sort((sortMethod))
         .map((meal) => {
         bottom.innerHTML += `
                 <div class="meal-card">
@@ -87,3 +89,5 @@ function sortTab() {
     }
     displayMeals();
 }
+
+
