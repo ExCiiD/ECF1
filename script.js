@@ -33,11 +33,12 @@ function displayMeals() {
     bottom.innerHTML = ''/* efface les anciennes cartes */
     tab
         .slice(0, rangeValue)
-        .sort((a, b) => a.strMeal.localeCompare(b.strMeal)
-            /* if (btnState == true) { a.strMeal.localeCompare(b.strMeal) }
+        .sort((a, b) => /* a.strMeal.localeCompare(b.strMeal) */ {
+            if (btnState == true) { a.strMeal.localeCompare(b.strMeal) }
             else {
                 b.strMeal.localeCompare(a.strMeal)
-            } */
+            }
+        }
         )
         .map((meal) => {
         bottom.innerHTML += `
