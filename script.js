@@ -73,7 +73,7 @@ function nbResults() {
 }
 
 // eventlistener sur le bouton pour trier
-btnDecroissant.addEventListener('click', sortTab)
+btnDecroissant.addEventListener('click', sortTab);
 
 // fonction pour trier 
 function sortTab() {
