@@ -88,6 +88,7 @@ function sortTab() {
         console.log(btnState)
     }
     displayMeals();
+
 }
 
 
