@@ -25,9 +25,7 @@ function searchValueUpdate() {
             tab = d.meals;
             console.log(tab);
             displayMeals();
-        }
-
-        )
+        })
         .catch(err => console.error(err));
 }
 
