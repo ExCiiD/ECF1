@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.top-section{
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#search{
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #D9D9D9;
+    box-shadow: 10px 5px 5px #b1a4a4;
+;
+}
+#btn{
+    width: 140px;
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+}
+.bot-section{
+    height: 75vh;
+    border-radius: 15px 15px 0 0;
+    background-color: #01ADC5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.meal-card{
+    background-color: aliceblue;
+    width: 380px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 6px 5px 3px rgb(40, 40, 41);
+}
+#card-title{
+    height: 10%;
+}
+
+#img-test{
+    width: 100%;
+    height: 40%;
+}
+.meal-description{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+}
