@@ -56,6 +56,7 @@
 }
 .card-title{
     height: 10%;
+    text-align: center;
 }
 
 #img-test{
@@ -72,8 +73,8 @@
     text-decoration: underline;
 }
 .recette{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 90%;
     text-overflow: ellipsis;
     word-wrap: break-word;
